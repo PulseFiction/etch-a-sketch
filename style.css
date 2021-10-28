@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #da2020;
+
+
+}
+
+.container {
+
+    width: 50rem;
+    height: 50rem;
+    display: grid;
+    background-color: #fff;
+    margin-top: 2.5rem;
+    display: grid;
+    
+}
+
+.square {
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+}
