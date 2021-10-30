@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #da2020;
+    gap: 2rem;
 
 
 }
@@ -34,6 +35,20 @@ body {
     background-color: black;
 }
 
+.clear {
+    padding: 1rem;
+    background-color: #6ef5ff;
+    border-radius: 10px;
+    border-color: #303030;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.clear:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
 .square:hover {
-    background-color: chartreuse;
+    background-color: #fff;
 }
