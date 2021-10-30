@@ -22,7 +22,7 @@ function sketch(){
             squares = prompt('Please enter less than 100')
         } 
         
-        let formula = (squares * 50) + 'px'
+        let formula = ((squares * 50) / 16) + 'rem'
         container.style.width = formula
         container.style.height = formula
         
