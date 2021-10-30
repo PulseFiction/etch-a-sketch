@@ -22,8 +22,11 @@ function sketch(){
             squares = prompt('Please enter less than 100')
         } 
         
+        let formula = (squares * 50) + 'px'
+        container.style.width = formula
+        container.style.height = formula
         
-        for (let i = 0 ; i < squares ; i++){
+        for (let i = 0 ; i < squares ** 2 ; i++){
             const square = document.createElement('div');
             square.classList.add('square');
             container.appendChild(square);
