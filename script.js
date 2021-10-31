@@ -11,7 +11,7 @@ function sketch(){
         container.appendChild(square);
 
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'white'
+            square.style.backgroundColor = '#646464'
         })
     }
     
@@ -40,7 +40,7 @@ function sketch(){
             container.appendChild(square);
             
             square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'white'
+            square.style.backgroundColor = '#646464'
             });
         };
 
