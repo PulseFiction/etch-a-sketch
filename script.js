@@ -1,53 +1,73 @@
 // Globals
 const container = document.querySelector(".container");
 const btn = document.querySelector(".clear");
+const rainbow = document.querySelector(".rainbow");
 
+function sketch() {
+  for (let i = 0; i < 256; i++) {
+    const square = document.createElement("div");
+    square.classList.add("square");
+    container.appendChild(square);
 
-function sketch(){
+    square.addEventListener("mouseover", () => {
+      square.style.backgroundColor = "#646464";
+    });
+    rainbow.addEventListener('click', () => {
+        square.addEventListener("mouseover", function () {
+                let r = Math.random() * 252;
+                let g = Math.random() * 252;
+                let b = Math.random() * 252;
 
-    for (let i = 0 ; i < 256 ; i++){
-        const square = document.createElement('div');
-        square.classList.add('square');
-        container.appendChild(square);
+                square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
-        square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = '#646464'
-        })
-    }
-    
-    function reset(squares) {
-        container.innerHTML = ''
-        squares = prompt('Please enter how many squares you would like:')
-        if (squares > 100) {
-            squares = prompt('Please enter less than 100')
-        } 
-        
-        //let formula = ((squares * 20) / 16) + 'rem'
-        //container.style.width = formula
-        // container.style.height = formula
-        
-        for (let i = 0 ; i < squares ** 2 ; i++){
-            const square = document.createElement('div');
-            
-            square.classList.add('square');
-            container.appendChild(square);
-            square.style.width = 256 / squares + 'px'
-            square.style.height = 256 / squares + 'px'
-            square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = '#646464'
             });
-        };
+        
+      });
+  }
 
+  function reset(squares) {
+    container.innerHTML = "";
+    squares = prompt("Please enter how many squares you would like:");
+    if (squares > 100) {
+      squares = prompt("Please enter less than 100");
     }
 
-    btn.addEventListener('click', reset)
-    
-}
+    //let formula = ((squares * 20) / 16) + 'rem'
+    //container.style.width = formula
+    // container.style.height = formula
 
+    for (let i = 0; i < squares ** 2; i++) {
+      const square = document.createElement("div");
+      square.classList.add("square");
+      container.appendChild(square);
+      square.style.width = 512 / squares + "px";
+      square.style.height = 512 / squares + "px";
+      square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = "#646464";
+      });
+      rainbow.addEventListener('click', () => {
+        square.addEventListener("mouseover", function () {
+                let r = Math.random() * 252;
+                let g = Math.random() * 252;
+                let b = Math.random() * 252;
 
+                square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
+            });
+        
+      });
+      
+      
+    }
+  }
 
-sketch()
+  
+  
+
+  btn.addEventListener("click", reset);
+};
+
+sketch();
 /* 
 function etchSketch(squares) {
   for (let i = 0; i < 256; i++) {
