@@ -3,4 +3,4 @@
 As part of the Odin Project foundtion course, I have designed an
 Etch a Sketch using mostly Javascript.
 
-Live Link:
+Live Link: https://pulsefiction.github.io/etch-a-sketch/
