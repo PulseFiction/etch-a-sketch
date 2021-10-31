@@ -17,8 +17,8 @@ body {
 
 .container {
 
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
     display: grid;
     background-color: #fff;
     margin-top: 0rem;
@@ -37,11 +37,10 @@ h1 {
 }
 
 .square {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: #e9e6e6;
-    border: 1px solid hsla(0, 0%, 81%, 0.3);
-    
+
 }
 
 .clear {

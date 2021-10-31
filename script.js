@@ -22,23 +22,17 @@ function sketch(){
             squares = prompt('Please enter less than 100')
         } 
         
-
-        
-        
-        
-        
-        let formula = ((squares * 20) / 16) + 'rem'
-        container.style.width = formula
-        container.style.height = formula
+        //let formula = ((squares * 20) / 16) + 'rem'
+        //container.style.width = formula
+        // container.style.height = formula
         
         for (let i = 0 ; i < squares ** 2 ; i++){
             const square = document.createElement('div');
             
             square.classList.add('square');
-        //    square.style.width = (40 * squares) / 
-         //   square.style.height =
             container.appendChild(square);
-            
+            square.style.width = 256 / squares + 'px'
+            square.style.height = 256 / squares + 'px'
             square.addEventListener('mouseover', () => {
             square.style.backgroundColor = '#646464'
             });
